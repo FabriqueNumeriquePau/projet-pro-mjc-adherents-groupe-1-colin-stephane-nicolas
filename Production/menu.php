@@ -8,14 +8,10 @@
 </head>
 
 <body>
-  <nav>
-    <input class ="topnav" type="search">
-    <button class ="topnavbutton"><i class="fas fa-search"></i></button>
-  </nav>
-
- <?php
+<?php
+  include "navmenu.php";
   include "sidemenu.php";
-  ?>
+?>
   
  <footer>
     <p>© Copyright mjcdesfleurs 2020 - Tous droits reservés</p>

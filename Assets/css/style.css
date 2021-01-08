@@ -24,9 +24,9 @@ html,body {
   position:absolute;
   top:0;
   bottom:0;
-  left:0;
-  height:75vh;
-  padding-top: 15vh;
+  left:0;;
+  height:85vh;
+  padding-top: 10vh;
   margin-top: 5vh;
   width:60px;
   overflow:hidden;
@@ -108,39 +108,49 @@ aside ul,aside li {
   padding:0;
 }
 
-li>a {
-  transition: background 0.5s ease-out;
-}
-
-li:hover>a {
-  color:#fff;
-  background:#5fa2db;
-  transition: none;
-}
-
 nav {
   position : fixed;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  display: grid;
   top:0;
   height : 5vh;
   width: 100vw;
   background:rgba(154, 100, 99, 1);
-  padding-left: 65px;
+  padding-left: 65px;  
+  grid-template-columns: 250px 25px 3fr 1fr 1fr;
+  grid-template-areas: 
+  "input submit logo admin logout"
 }
 
 .top-menu {
   border-radius: 30px 0 0 30px;
   width: 250px;
+  height: 20px;
   border: none;
+  grid-area : input;
+  align-self: center;
 }
 
 .top-menu-button {
-
   border-radius: 0 30px 30px 0;
+  width: 25px;
+  height : 20px;
   border: none;
   background-color: lightslategrey;
+  grid-area :submit;
+  align-self: center;
+}
+
+.admin {
+  height: 5vh;
+  grid-area : admin;
+}
+
+.logout {
+  height: 10px;
+  width: fit-content;
+  grid-area : logout;
+  align-self: center;
+  justify-self: center
 }
 
 .fas {
@@ -156,4 +166,44 @@ footer {
   width: 100vw;
   background-color: rgba(154, 100, 99, 1);
   height : 5vh;
+  color: white;
+  font-family: 'roboto';
 }
+
+.lien-tableau:hover {
+  color:rgba(255, 255, 255, 255);
+}
+
+.lien-adherents:hover {
+  color:rgba(0, 155, 255, 1);
+}
+
+.lien-partenaires:hover {
+  color:rgba(225, 128, 198, 1);
+}
+
+.lien-activites:hover {
+  color : rgba(255, 138, 0, 1);
+}
+
+.lien-evenements:hover {
+  color :rgba(255, 76, 76, 1);
+}
+
+.lien-newsletter:hover {
+  color :rgba(84, 62, 221, 1);
+}
+
+.lien-statistiques:hover {
+  color :rgba(217, 169, 2, 1);
+}
+
+.lien-import:hover {
+  color :rgba(4, 117, 1, 1);
+}
+
+.lien-permissions:hover {
+  color :rgba(73, 73, 73, 1);
+}
+
+
