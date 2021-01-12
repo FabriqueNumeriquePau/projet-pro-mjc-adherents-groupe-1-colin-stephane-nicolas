@@ -14,7 +14,7 @@
 ?>
   
  <footer>
-    <p>© Copyright mjcdesfleurs 2020 - Tous droits reservés</p>
+    <p>© Copyright mjcdesfleurs 2020 - Tous droits réservés</p>
  </footer>
  
 <script src="/Script/script.js"></script>

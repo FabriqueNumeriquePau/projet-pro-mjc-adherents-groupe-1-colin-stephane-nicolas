@@ -47,7 +47,8 @@
                    <i class="fa fa-file-excel fa-2x"></i>
                     <span class="aside-text"> Import/Export</span>
                 </a>
-            </li>            <li>
+            </li>            
+            <li>
                 <a href="#" class="lien-permissions">
                      <i class="fa fa-user-plus fa-2x"></i>
                      <span class="aside-text"> Permissions</span>

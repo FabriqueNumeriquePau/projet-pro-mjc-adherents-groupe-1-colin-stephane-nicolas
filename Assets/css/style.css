@@ -21,9 +21,8 @@ html,body {
 .main-menu {
   background:rgba(154, 100, 99, 1);
   border-right:1px solid #e5e5e5;
-  position:absolute;
+  position:fixed;
   top:0;
-  bottom:0;
   left:0;;
   height:85vh;
   padding-top: 10vh;
@@ -128,6 +127,8 @@ nav {
   border: none;
   grid-area : input;
   align-self: center;
+  outline: none;
+  text-align: center;
 }
 
 .top-menu-button {
@@ -146,7 +147,6 @@ nav {
 }
 
 .logout {
-  height: 10px;
   width: fit-content;
   grid-area : logout;
   align-self: center;
@@ -205,5 +205,8 @@ footer {
 .lien-permissions:hover {
   color :rgba(73, 73, 73, 1);
 }
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 
 
