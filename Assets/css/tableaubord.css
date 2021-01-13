@@ -4,25 +4,50 @@ body,html {
     width:100%;
     height:100%;
 }
-
-/*.logo {
-    top: 0px;
-    left: 0px;
-    width: 82px;
-    height: 88px;
-    color: white;
-}
-*/
 p {
   font-weight: bold;
   font-size: 30px;
-  }
+}
+h1 {
+  margin-left: 20%;
+  text-align: center;
+  font-size: 30px;
+}
 i {
-    margin-top: 10px;
-    vertical-align: bottom;
-    font-size : 40px;
+  margin-top: 10px;
+  vertical-align: bottom;
+  font-size : 40px;
     
-    }
+}
+.sidenav {
+  height:100%; /* 100% Full-height */
+  width: 300px; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #9A6463; /* Black*/
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: repeat(9,50px);
+  column-gap: 5px;
+  }
+.sidenav i {
+  grid-area: 1 auto;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.sidenav a {
+  grid-area: 2 auto;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+  visibility: visible;
+}
 .button {
   display: grid;
   grid-template-columns: (4, 1fr);
@@ -166,33 +191,4 @@ i {
 .button8:hover {
   background-color: #000000;
   color: white;
-}
-.sidenav {
-  height:100%; /* 100% Full-height */
-  width: 300px; /* 0 width - change this with JavaScript */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #9A6463; /* Black*/
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: repeat(9,50px);
-  column-gap: 5px;
-  }
-.sidenav i {
-  grid-area: 1 auto;
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  transition: 0.3s;
-}
-.sidenav a {
-  grid-area: 2 auto;
-  text-decoration: none;
-  color: #ffffff;
-  transition: 0.3s;
-  visibility: visible;
 }
