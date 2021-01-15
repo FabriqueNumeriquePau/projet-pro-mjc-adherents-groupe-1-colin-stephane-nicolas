@@ -76,7 +76,6 @@ section :nth-child(8) {
     grid-area: input1;
     display: flex;
     padding : 0px 15px 0px 15px;
-    flex-direction: row; 
     outline: none;   
 }
 
@@ -106,9 +105,9 @@ section :nth-child(10) {
 
 .name-file {
     align-self: unset;
-    width: 270px;
+    display: flex;
     justify-self: right;
-    border-radius: 10px;
+    border-radius: 5em;
     border-style: none;
     outline: none;
 }
@@ -121,7 +120,7 @@ section :nth-child(10) {
     font-weight: bold;
     align-self: center;
     margin: 0.5em 1em 1em 1em;
-    border-radius: 10px;
+    border-radius: 5em;
     padding: 0.4em;
     border-style: none;
     grid-area: bouton;
@@ -137,6 +136,7 @@ section :nth-child(10) {
 
 .select-folder {   
     grid-area: input3;
+    display: flex;
     width: 270px;
     justify-self: right;
     border-radius: 10px 0 0 10px;
@@ -146,6 +146,7 @@ section :nth-child(10) {
 
 .select-folder-button {   
     grid-area: input3;
+    display: flex;
     align-self: left;
     border-radius: 0 10px 10px 0;
     border-style: none;
