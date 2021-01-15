@@ -1,0 +1,55 @@
+button {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border:none;
+    padding:8px 16px;
+    transition:all .3s ease;
+}
+button:hover{
+    background-color: orangered;
+    transform: scale(1.05);
+}
+button[type="reset"] {
+    background-color: rgb(194, 50, 45);
+}
+
+button:not([disabled]) {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .6;
+    background-color:grey;
+}
+button:hover:disabled{
+    transform:scale(1);
+}
+
+input{
+    padding:6px 12px;
+    border:thin grey double;
+    transition:all .3s ease;
+    font-size:18px;
+    color:teal;
+}
+input:hover, input:focus{
+    padding:6px 12px;
+    border:thin black dotted;
+    transform: scale(1.05);
+}
+
+input.ng-valid{
+    border-bottom:green 3px solid;
+}
+input.ng-invalid{
+    border-bottom:red 3px solid;
+}
+
+form.ng-valid{
+    background-color: rgba(0, 125, 0, .3);
+}
+form.ng-invalid{
+    background-color: rgba(200, 0, 0, .3);
+}
