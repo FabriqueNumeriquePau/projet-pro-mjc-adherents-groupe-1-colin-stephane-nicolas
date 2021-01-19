@@ -16,9 +16,10 @@
         <section>
             <h2>Critères</h2>
             <article class="min-max-slider">
-                <label for="min">Tranche d'âge</label>
+                
                 <input id="min" class="min" name="min" type="range" step="1" min="7" max="77" />
                 <input id="max" class="max" name="max" type="range" step="1" min="7" max="77" />
+                <label for="min">Tranche d'âge</label>
             </article>
             <article>
                 <label for="min">Sexe</label>
