@@ -1,0 +1,100 @@
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 18vw;
+    column-gap: 8vw;
+    row-gap: 1.5vw;
+    padding: 1vw 4vw 2vw 10vw;
+    background: #EFEDEB;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    grid-template-areas:
+         "header header header"
+         "carte1 carte2 btn"
+         "module module module";
+}
+main :nth-child(1) {
+    grid-area: header;
+}
+main :nth-child(2) {
+    grid-area: carte1;
+}
+main :nth-child(3) {
+    grid-area: carte2;
+}
+main :nth-child(4) {
+    grid-area: btn;
+}
+main :nth-child(5) {
+    grid-area: module;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    background: #9A6463;
+    border-radius: 10px;
+    padding: 0 1vw 2vw 1vw;
+    box-shadow: 0 4px 32px 26px rgba(0, 0, 0, 0.15);
+    grid-template-areas: 
+    "titre"
+    "form"
+    "form";
+}
+h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+    color: black;
+}
+h2 {
+    text-align: center;
+    font-size: 1.5vw;
+}
+section :nth-child(1) {
+    grid-area: titre;
+}
+section :nth-child(2) {
+    grid-area: form;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+input {
+    margin: 0.5vw;
+    border-radius: 10px;
+    padding: 0.4vw;
+    border-style: none;
+}
+input:focus {
+    outline: none;
+}
+label {
+    margin: 0 1.5vw;
+    font-size: 0.8vw;
+}
+
+.bouton {
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+}
+#btn-envoyer {
+    width: 10vw;
+    height: 2vw;
+    background: #543EDD;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+}
+#btn-historique {
+    width: 10vw;
+    height: 2vw;
+    background: #543EDD;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+}
