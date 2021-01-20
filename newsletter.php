@@ -2,23 +2,16 @@
 <html>
 
 <head>
-    <link href="../Assets/css/newsletter.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Assets/css/style.css">
-    <link rel="stylesheet" href="../Assets/css/trix.css">
-    <script src="/projet-pro-mjc-adherents-groupe-1-colin-stephane-nicolas/Script/trix.js"></script>
-    <script src="/projet-pro-mjc-adherents-groupe-1-colin-stephane-nicolas/Script/attachments.js"></script>
+    <link rel="stylesheet" href="./Assets/css/newsletter.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/trix.css">
+    
 </head>
 
 <body>
     <?php
-    //include "../Production/navmenu.php";
-    //include "../Production/sidemenu.php";
-
-    if (isset($_POST['submit'])) {
-
-        echo $_POST['content'];
-    }
-
+    include "./php/navmenu.php";
+    include "./php/sidemenu.php";
     ?>
     <h1>NEWSLETTER</h1>
     <main>
@@ -85,8 +78,9 @@
             </form>
         </section>
     </main>
-    <script src="../Script/slide.js"></script>
-    <!-- <script src="/Script/script.js"></script> -->
+    <script src="./js/slide.js"></script>
+    <script src="./js/trix.js"></script>
+    <script src="./js/attachments.js"></script>
     <script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script>
 
 </body>

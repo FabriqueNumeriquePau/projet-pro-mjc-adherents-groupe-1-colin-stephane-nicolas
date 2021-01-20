@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartes</title>
-    <link rel="stylesheet" href="../Assets/css/partenaire_modif.css">
+    <link rel="stylesheet" href="./Assets/css/partenaire_modif.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Modifier un partenaire</title>
 </head>
 
-<body>    
+<body>
+    <?php
+    include "./php/navmenu.php";
+    include "./php/sidemenu.php";
+    ?>
     <main>
         <section>
             <h1>DONNÉES PRINCIPALES</h1>
@@ -54,6 +59,7 @@
             </article>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

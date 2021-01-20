@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Assets/css/ajoutadherent.css">
-    <title>ajoutadherent</title>
+    <link rel="stylesheet" href="./Assets/css/ajoutadherent.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Adhérents</title>
 </head>
-
 <body>
+<?php
+  include "./php/navmenu.php";
+  include "./php/sidemenu.php";
+  ?>
+   <a href="./adherent_modif.php">TRUC</a>
+   <a href="./carte_adherent.php">TRUC-CARTE</a>
+   <main>
     <h1>Création d'un compte adhérent</h1>
-    <main>
     <p class="nom">Nom : <input type="text" class="champnom" name="name" required></p>
     <p class="ident">Identifiant : <input type="text" class="champident" name="name" required></p>
     </p>
@@ -28,31 +33,6 @@
     <p class="typecompte">Type de compte : <input type="form" class="champtypecompte" name="name" required></p>
     <p class="comptelie">Compte lié : <input type="text" class="champcomptelie" name="name" ></p>
     </main>
-    
-    <aside id="mySidenav" class="sidenav">
-
-        <i class="fas fa-home"></i>
-        <a href="#"> Tableau de bord</a>
-        <i class="fas fa-users"></i>
-        <a href="#"> Adhérents</a>
-        <i class="fas fa-handshake"></i>
-        <a href="#"> Partenaires</a>
-        <i class="fas fa-running"></i>
-        <a href="#"> Activités</a>
-        <i class="fas fa-microphone"></i>
-        <a href="#"> Evènements</a>
-        <i class="fas fa-chart-area"></i>
-        <a href="#"> Statistiques</a>
-        <i class="fas fa-user-plus"></i>
-        <a href="#"> Permissions</a>
-        <i class="fas fa-envelope"></i>
-        <a href="#"> Newsletter</a>
-        <i class="fas fa-file-excel"></i>
-        <a href="#"> Import/Export</a>
-    
-    </aside>
-    <script src="https://kit.fontawesome.com/433f9c0cfe.js"></script>
+    <script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script>
 </body>
-
-
 </html>

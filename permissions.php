@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartes</title>
-    <link rel="stylesheet" href="../Assets/css/permissions.css">
+    <link rel="stylesheet" href="./Assets/css/permissions.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Permissions</title>
 </head>
 
 <body>
+    <?php
+    include "./php/navmenu.php";
+    include "./php/sidemenu.php";
+    ?>
     <main>
         <section class="modal">
             <article class="carte">

@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un adhérent</title>
-    <link rel="stylesheet" href="../Assets/css/activites_modif.css">
+    <link rel="stylesheet" href="./Assets/css/activites_modif.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 <body>
+<?php
+  include "./php/navmenu.php";
+  include "./php/sidemenu.php";
+  ?>
     <main>
         <section>
             <h1>INTERVENANT</h1>
@@ -66,6 +71,7 @@
             </article>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <link href="../Assets/css/statistiques.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/statistiques.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Statistiques</title>
 </head>
 
 <body>
     <?php
-    include "../Production/navmenu.php";
-    include "../Production/sidemenu.php";
+    include "./php/navmenu.php";
+    include "./php/sidemenu.php";
     ?>
 <h1>STATISTIQUES</h1>
     <main>
@@ -68,9 +71,8 @@
         </section>
     </main>
 
-    <script src="../Script/nouislider.js"></script>
-    <script src="../Script/slide.js"></script>
-    <!-- <script src="/Script/script.js"></script> -->
+    <script src="./js/nouislider.js"></script>
+    <script src="./js/slide.js"></script>
     <script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script>
 
 </body>
