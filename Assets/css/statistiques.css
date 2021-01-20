@@ -1,0 +1,172 @@
+.min-max-slider {
+  position: relative; 
+  width: 25vw; 
+  text-align: center; 
+}
+
+span.value {
+  height: 1.7vw; 
+  width: auto;
+  font-weight: bold; 
+  display: inline-block;
+}
+
+span.value.lower::after {content: " ans"; display: inline-block;}
+span.value.upper::before {content: " - "; display: inline-block; margin-left: 0.4vw;}
+span.value.upper::after {content: " ans"; display: inline-block;}
+
+
+.min-max-slider > .legend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.min-max-slider > input {
+  cursor: pointer; 
+  position: absolute;
+}
+
+.min-max-slider > input {
+  -webkit-appearance: none;
+  outline: none!important;
+  background: transparent;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 30%, silver 30%, silver 60%, transparent 60%, transparent 100%);
+}
+.min-max-slider > input::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 1.4vw; /* Set a specific slider handle width */
+  height: 1.4vw; /* Slider handle height */
+  background: #eee; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: 0.1vw solid gray;
+  border-radius: 100%;
+}
+.min-max-slider > input::-webkit-slider-runnable-track {cursor: pointer;}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  column-gap: 10em;
+  padding: 6vw 6vw;
+  background: #c7c7c7;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  grid-template-areas: 
+  "area1"
+  "area2";
+ 
+}
+
+main :nth-child(1) {
+  grid-area: area1;
+}
+
+main :nth-child(2) {
+  grid-area: area2;
+}
+
+section {
+  display: grid;  
+  grid-template-columns: 1fr 1fr .5fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: 
+  "criteres input1 bouton1"
+  "input2 input3 bouton1"
+  "input4 input5 bouton2"
+  "input6 input7 bouton2";
+}
+
+section :nth-child(1) {
+  grid-area: criteres;
+  justify-self: left;
+  align-self: flex-end;
+}
+
+section :nth-child(2) {
+  grid-area: input2;
+  justify-self: start;
+}
+
+section :nth-child(3) {
+  grid-area: input4;
+  justify-self: start;
+}
+
+section :nth-child(4) {
+  grid-area: input6;
+  justify-self: start;
+}
+
+section :nth-child(5) {
+  grid-area: input1;
+  justify-self: start;
+  align-self: flex-end;
+}
+
+section :nth-child(6) {
+  grid-area: input3;
+  justify-self: start;
+}
+
+section :nth-child(7) {
+  grid-area: input5;
+  justify-self: start;
+}
+
+section :nth-child(8) {
+  grid-area: input7;
+  justify-self: start;
+  
+}
+
+.sexe, .profession, .evenements, .activites, .etablissements, .zones {
+  border-radius: 30em 0 0 30em;
+  width: 25vw;
+  height: 1vw;
+  border: none;
+  text-align: center;
+}
+
+.search {
+  border-radius: 0 30em 30em 0;
+  width: 2vw;
+  height : 1vw;
+  border: none;
+  background-color: lightslategrey;
+  align-self: left;
+}
+
+#btn-generer{
+  grid-area: bouton1;
+  width: 10vw;
+  height: 2vw;
+  background: rgba(217, 169, 2, 1);
+  color: white;
+  font-weight: bold;
+  font-size: 0.8vw;
+  outline: none;
+  justify-self: center;
+  align-self: flex-end;
+}
+#btn-reinit {
+  grid-area: bouton2;
+  width: 10vw;
+  height: 2vw;
+  background: rgba(217, 169, 2, 1);
+  color: white;
+  font-weight: bold;
+  font-size: 0.8vw;
+  align-self: center;
+  outline: none;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.fas {
+  width: 0.1vw;
+  height: 0.1vw;
+  text-align: center;
+
+}

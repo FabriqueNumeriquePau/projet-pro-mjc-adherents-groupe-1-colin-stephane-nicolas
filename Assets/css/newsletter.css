@@ -98,3 +98,156 @@ label {
     font-weight: bold;
     align-self: center;
 }
+  main {
+      display: grid;
+      grid-template-rows: 1fr, 1fr;
+      column-gap: 5em;
+      padding: 6vw 6vw;
+      row-gap: 5em;
+      color: black;
+      background-color: darkgrey;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      grid-template-areas:
+          "area1"
+          "area2";
+
+  }
+
+  main :nth-child(1) {
+      grid-area: area1;
+  }
+
+  main :nth-child(2) {
+      grid-area: area2;
+  }
+
+
+  .informations {
+      display: grid;
+      grid-template-columns: 1fr 1fr .5fr;
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-template-areas:
+          "titre1 titre2 bouton1"
+          "input1 input5 bouton1"
+          "input2 input6 bouton2"
+          "input3 input7 bouton2"
+          "input4 input8 bouton2";
+  }
+
+  section.informations :nth-child(1) {
+      grid-area: titre1;
+      justify-self: left;
+      align-self: flex-end;
+  }
+
+  section.informations :nth-child(2) {
+      grid-area: input1;
+      justify-self: start;
+  }
+
+  section.informations :nth-child(3) {
+      grid-area: input2;
+      justify-self: start;
+  }
+
+  section.informations :nth-child(4) {
+      grid-area: input3;
+      justify-self: start;
+  }
+
+  section.informations :nth-child(5) {
+      grid-area: input4;
+      justify-self: start;
+      align-self: flex-end;
+  }
+
+  section.informations :nth-child(6) {
+      grid-area: titre2;
+      justify-self: start;
+  }
+
+  section.informations :nth-child(7) {
+      grid-area: input5;
+      justify-self: start;
+  }
+
+  section.informations :nth-child(8) {
+      grid-area: input6;
+      justify-self: start;
+
+  }
+
+  section.informations :nth-child(9) {
+      grid-area: input7;
+      justify-self: start;
+
+  }
+
+  section.informations :nth-child(10) {
+      grid-area: input7;
+      justify-self: start;
+
+  }
+
+  .activites,
+  .evenement,
+  .tranche,
+  .liste,
+  .expediteur,
+  .mail,
+  .objet {
+      border-radius: 30em 0 0 30em;
+      width: 25vw;
+      height: 1vw;
+      border: none;
+      text-align: center;
+  }
+
+  .search {
+      border-radius: 0 30em 30em 0;
+      width: 2vw;
+      height: 1vw;
+      border: none;
+      background-color: lightslategrey;
+      align-self: left;
+  }
+
+  #btn-generer {
+      grid-area: bouton1;
+      width: 10vw;
+      height: 2vw;
+      background: rgba(217, 169, 2, 1);
+      color: white;
+      font-weight: bold;
+      font-size: 0.8vw;
+      outline: none;
+      justify-self: center;
+      align-self: flex-end;
+  }
+
+  #btn-reinit {
+      grid-area: bouton2;
+      width: 10vw;
+      height: 2vw;
+      background: rgba(217, 169, 2, 1);
+      color: white;
+      font-weight: bold;
+      font-size: 0.8vw;
+      align-self: center;
+      outline: none;
+      justify-self: center;
+      align-self: flex-start;
+  }
+
+  .fas {
+      width: 0.1vw;
+      height: 0.1vw;
+      text-align: center;
+
+  }
+
+  form {
+    background-color: white;
+
+  }

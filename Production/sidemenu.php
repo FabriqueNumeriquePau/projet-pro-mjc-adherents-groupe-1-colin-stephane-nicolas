@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="Assets/css/style.css">
-    <title>Connexion</title>
-</head>
-<body>
-    <nav>
-        <input class ="top-menu" type="search">
-        <button class ="top-menu-button" type="submit"><i class="fas fa-search"></i></button>  
-        <div class ="admin">
-        <var>John Doe</var>
-        <var>Administrateur</var>
-        </div>
-        <a href="#" class ="logout">
-            <i class="fas fa-power-off"></i>
-        </a>
-    </nav>
-  
-    <aside class="main-menu">
+<aside class="main-menu">
         <ul>
-            <li>
+            <li> 
                 <a href="#" class="lien-tableau">
                     <i class="fa fa-home fa-2x"></i>
                     <span class="aside-text"> Tableau de Bord</span>   
@@ -64,12 +43,12 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="lien-import">
+                <a href="#"class="lien-import">
                    <i class="fa fa-file-excel fa-2x"></i>
                     <span class="aside-text"> Import/Export</span>
                 </a>
-            </li>
-            <li>            
+            </li>            
+            <li>
                 <a href="#" class="lien-permissions">
                      <i class="fa fa-user-plus fa-2x"></i>
                      <span class="aside-text"> Permissions</span>
@@ -78,10 +57,3 @@
         </ul>
     </aside>
 
-    <footer>
-        <p>© Copyright mjcdesfleurs 2020 - Tous droits reservés</p>
-    </footer>
-<script src="Script/script.js"></script> 
-<script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script> 
-</body>
-</html>
