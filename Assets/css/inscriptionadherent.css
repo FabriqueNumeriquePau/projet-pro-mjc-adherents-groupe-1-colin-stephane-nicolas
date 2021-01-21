@@ -23,9 +23,9 @@ body,html {
 }
 input{
     border: 0;
-    border-radius: 5em;
+    border-radius: 2em;
     font-size: 1vw;
-    height: 3vw;
+    height: 1vw;
 }
 p { 
     font-size: 2em;
