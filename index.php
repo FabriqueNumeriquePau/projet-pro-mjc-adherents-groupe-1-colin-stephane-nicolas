@@ -1,65 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/css/tableaubord.css">
-    <link rel = "stylesheet" href="Assets/css/style.css">
+    <!-- <link rel="stylesheet" href="Assets/css/style.css"> -->
     <title>Tableau de bord</title>
 </head>
+
 <body>
-    <?php 
+    <?php
     include "./php/navmenu.php";
     ?>
-     <section>
-        <article><h1>Tableau de bord</h1></article>
-        <article class="button">
-            <div class="button1">
-                
-                <a href="./adherents.php">
-                    <i class="fas fa-users"></i>
-                    <p>ADHÉRENTS</p>
-                </a>
-            </div>
-            <div class="button2">
-                <i class="fas fa-handshake"></i>
+    <main>
+        <h1>Tableau de bord</h1>
+        <section class="container">
+            <a class="button1" href="./adherents.php">
+                <i class="fa fa-users"></i>
+                <p>ADHÉRENTS</p>
+            </a>
+            <a class="button2" href="./partenaires.php">
+                <i class="fa fa-handshake"></i>
                 <p>PARTENAIRES</p>
-                <a href="./partenaires.php"></a>
-            </div>
-            <div class="button3">
-                <i class="fas fa-running"></i>
+            </a>
+            <a class="button3" href="./activites.php">
+                <i class="fa fa-running"></i>
                 <p>ACTIVITÉS</p>
-                <a href="./activites.php"></a>
-            </div>
-            <div class="button4">
-                <i class="fas fa-microphone"></i>
+            </a>
+            <a class="button4" href="./evenements.php">
+                <i class="fa fa-microphone"></i>
                 <p>ÉVÈNEMENTS</p>
-                <a href="./evenements.php"></a>
-            </div>
-            <div class="button5">
-                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="button5" href="./newsletter.php">
+                <i class="fa fa-envelope"></i>
                 <p>NEWSLETTER</p>
-                <a href="./newsletter.php"></a>
-            </div>
-            <div class="button6">
-                <i class="fas fa-file-excel"></i>
+            </a>
+            <a class="button6" href="./import.php">
+                <i class="fa fa-file-excel"></i>
                 <p>IMPORT/EXPORT</p>
-                <a href="./import.php"></a>
-            </div>
-            <div class="button7">
-                <i class="fas fa-chart-area"></i>
+            </a>
+            <a class="button7" href="./statistiques.php">
+                <i class="fa fa-chart-area"></i>
                 <p>STATISTIQUES</p>
-                <a href="./statistiques.php"></a>
-            </div>
-            <div class="button8">
-                <i class="fas fa-user-plus"></i>
+            </a>
+            <a class="button8" href="./permissions.php">
+                <i class="fa fa-user-plus"></i>
                 <p>PERMISSIONS</p>
-                <a href="./permissions.php"></a>
-            </div>
-        </article>
+            </a>
 
-    </section>
-    
-<script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script> 
+
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/433f9c0cfe.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

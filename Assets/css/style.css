@@ -1,4 +1,4 @@
-tml,body {
+html,body {
   margin: 0;
   background: #EFEDEB;
 }
@@ -6,16 +6,16 @@ tml,body {
 .fa {
   position: relative;
   display: table-cell;
-  width: 60px;
-  height: 36px;
-  padding-bottom: 30px;
+  width: 3.5vw;
+  height: 2vw;
+  padding-bottom: 2vw;
   text-align: center;
   vertical-align: middle;
-  font-size:20px;
+  font-size:1.75vw;
 }
     
 .main-menu:hover,aside.main-menu.expanded {
-  width:250px;
+  width:14vw;
   overflow:visible;
 }
   
@@ -29,7 +29,7 @@ tml,body {
   height:85vh;
   padding-top: 10vh;
   margin-top: 5vh;
-  width:60px;
+  width:3.2vw;
   overflow:hidden;
   transition:width .2s linear;
   transition:width .2s linear;
@@ -75,7 +75,7 @@ tml,body {
   width:190px;
   padding-bottom: 30px;
   font-family: 'roboto';
-  font-size:20px;
+  font-size:1.2vw;
 }
 
 .no-touch .scrollable.hover {
@@ -90,15 +90,7 @@ tml,body {
 a:hover,a:focus {
   text-decoration:none;
 }
-  
-aside {
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  -o-user-select:none;
-  user-select:none;
-}
-  
+ 
 aside ul,aside li {
   outline:0;
   margin:0;
@@ -107,54 +99,65 @@ aside ul,aside li {
 
 nav {
   position : fixed;
-  display: grid;
   top:0;
+  display: grid;
   height : 5vh;
-  width: 100vw;
+  align-items: center;
+  width: 100%;
   background:rgba(154, 100, 99, 1);
-  padding-left: 65px;  
-  grid-template-columns: 250px 25px 3fr 1fr 1fr;
+  grid-template-columns: 6vw auto 15vw auto 7vw;
+  grid-template-rows: 5vh;
   grid-template-areas: 
-  "input submit logo admin logout"
+  "logo . barre . admin"
 }
-
+img {
+  grid-area: logo;
+  margin-left: 1vw;
+  width: 6vw;
+  height: 2vw;
+}
+.barre-recherche{
+  grid-area: barre;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "input submit";
+}
 .top-menu {
   border-radius: 30px 0 0 30px;
-  width: 250px;
-  height: 20px;
+  width: 13vw;
+  height: 1.5vw;
+  margin: 0;
   border: none;
   grid-area : input;
   align-self: center;
-  margin: 0;
 }
 
 .top-menu-button {
   border-radius: 0 30px 30px 0;
-  width: 25px;
-  height : 20px;
+  width: 2vw;
+  height : 1.5vw;
+  margin: 0;
   border: none;
   background-color: lightslategrey;
   grid-area :submit;
-  align-self: center;
 }
 
 .admin {
-  height: 5vh;
-  grid-area : admin;
+  display: grid;
+  height: 4vh;
+  margin-right: 4vw;
+  grid-area: admin;
 }
 
-.logout {
-  height: 10px;
-  width: fit-content;
-  grid-area : logout;
-  align-self: center;
-  justify-self: center
-}
+
 
 .fas {
 color : white;
+font-size: 1.2vw;
 }
-
+var {
+  font-size: 0.7vw;
+}
 footer {
   position: fixed;
   bottom: 0;

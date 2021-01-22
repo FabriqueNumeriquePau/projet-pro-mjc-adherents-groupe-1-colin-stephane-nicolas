@@ -1,194 +1,116 @@
-body,html {
-    padding:0px;
-    margin:0px;
-    width:100%;
-    height:100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  color: rgb(24, 22, 22);
+  font-size: 50px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4vw;
+  row-gap: 2vw;
+  width: 90%;
+  margin: auto;
+  grid-template-areas: 
+  "btn1 btn2 btn3 btn4"
+  "btn5 btn6 btn7 btn8";
+}
+a{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8em;
+  background: #E2e2e1;
+  height: 7vw;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+a:hover {
+  transition: none;
+  transform: scale(1.1);
+}
+i {
+  font-size: 3vw;
+  margin: 1vw;
 }
 p {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.8vw;
 }
-h1 {
-  margin-left: 20%;
-  text-align: center;
-  font-size: 30px;
-}
-i {
-  margin-top: 10px;
-  vertical-align: bottom;
-  font-size : 40px;
-    
-}
-.sidenav {
-  height:100%; /* 100% Full-height */
-  width: 300px; /* 0 width - change this with JavaScript */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #9A6463; /* Black*/
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: repeat(9,50px);
-  column-gap: 5px;
-  }
-.sidenav i {
-  grid-area: 1 auto;
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  transition: 0.3s;
-}
-.sidenav a {
-  grid-area: 2 auto;
-  text-decoration: none;
-  color: #ffffff;
-  transition: 0.3s;
-  visibility: visible;
-}
-.button {
-  display: grid;
-  grid-template-columns: (4, 1fr);
-  grid-gap: 100px;
-  grid-template-rows: repeat(2,100px)  ;
-  color: white;     
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  vertical-align: center;
-}
-
 .button1 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 24%;
-  top: 68%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn1;
   color: #009BFF; 
   border: 2px solid #009BFF;
 }
 .button1:hover {
-  background-color: #009bff;
+  background: #009bff;
   color: white;
 }
 .button2 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 42%;
-  top: 68%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn2;
   color: #E180C6; 
   border: 2px solid  #E180C6;
 }
 .button2:hover {
-  background-color: #E180C6;
+  background: #E180C6;
   color: white;
 }
 .button3 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 60%;
-  top: 68%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn3;
   color: #FF8A00; 
   border: 2px solid  #FF8A00;
 }
 .button3:hover {
-  background-color: #FF8A00;
+  background: #FF8A00;
   color: white;
 }
 .button4 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 78%;
-  top: 68%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn4;
   color: #E44747; 
   border: 2px solid  #E44747;
 }
 .button4:hover {
-  background-color: #E44747;
+  background: #E44747;
   color: white;
 }
 .button5 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 24%;
-  top: 82%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn5;
   color: #543EDD; 
   border: 2px solid  #543EDD;
 }
 .button5:hover {
-  background-color: #543EDD;
+  background: #543EDD;
   color: white;
 }
 .button6 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 42%;
-  top: 82%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn6;
   color: #047501; 
   border: 2px solid  #047501;
 }
 .button6:hover {
-  background-color: #047501;
+  background: #047501;
   color: white;
 }
 .button7 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 60%;
-  top: 82%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
+  grid-area: btn7;
   color: #D9A902; 
   border: 2px solid  #D9A902;
 }
 .button7:hover {
-  background-color: #D9A902;
+  background: #D9A902;
   color: white;
 }
 .button8 {
-  border: none;
-  border-radius: 5%;
-  position: absolute;
-  left: 78%;
-  top: 82%;
-  width: 297px;
-  height: 121px;
-  background-color: white; 
-  color: #000000; 
-  border: 2px solid  #000000;
+  grid-area: btn8;
+  color: #2d2d2d;
+  border: 2px solid #2d2d2d;
 }
 .button8:hover {
-  background-color: #000000;
+  background: #2d2d2d;
   color: white;
 }
