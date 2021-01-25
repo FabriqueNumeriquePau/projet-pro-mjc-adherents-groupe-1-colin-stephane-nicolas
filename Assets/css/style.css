@@ -10,7 +10,6 @@ html,body {
   height: 2vw;
   padding-bottom: 2vw;
   text-align: center;
-  vertical-align: middle;
   font-size:1.75vw;
 }
     
@@ -31,8 +30,7 @@ html,body {
   margin-top: 5vh;
   width:3.2vw;
   overflow:hidden;
-  transition:width .2s linear;
-  transition:width .2s linear;
+  transition: width 0.2s linear;
   z-index:1000;
   border: none;
 }
@@ -97,6 +95,42 @@ aside ul,aside li {
   padding:0;
 }
 
+.lien-tableau:hover {
+  color:rgba(255, 255, 255, 255);
+}
+
+.lien-adherents:hover {
+  color:rgba(0, 155, 255, 1);
+}
+
+.lien-partenaires:hover {
+  color:rgba(225, 128, 198, 1);
+}
+
+.lien-activites:hover {
+  color : rgba(255, 138, 0, 1);
+}
+
+.lien-evenements:hover {
+  color :rgba(255, 76, 76, 1);
+}
+
+.lien-newsletter:hover {
+  color :rgba(84, 62, 221, 1);
+}
+
+.lien-statistiques:hover {
+  color :rgba(217, 169, 2, 1);
+}
+
+.lien-import:hover {
+  color :rgba(4, 117, 1, 1);
+}
+
+.lien-permissions:hover {
+  color :rgba(73, 73, 73, 1);
+}
+/*---------------------------------------------------------NavMenu----------------------------------------------------------------------*/
 nav {
   position : fixed;
   top:0;
@@ -149,11 +183,9 @@ img {
   grid-area: admin;
 }
 
-
-
 .fas {
 color : white;
-font-size: 1.2vw;
+font-size: 1.1vw;
 }
 var {
   font-size: 0.7vw;
@@ -169,48 +201,4 @@ footer {
   height : 5vh;
   color: white;
   font-family: 'roboto';
-}
-
-.lien-tableau:hover {
-  color:rgba(255, 255, 255, 255);
-}
-
-.lien-adherents:hover {
-  color:rgba(0, 155, 255, 1);
-}
-
-.lien-partenaires:hover {
-  color:rgba(225, 128, 198, 1);
-}
-
-.lien-activites:hover {
-  color : rgba(255, 138, 0, 1);
-}
-
-.lien-evenements:hover {
-  color :rgba(255, 76, 76, 1);
-}
-
-.lien-newsletter:hover {
-  color :rgba(84, 62, 221, 1);
-}
-
-.lien-statistiques:hover {
-  color :rgba(217, 169, 2, 1);
-}
-
-.lien-import:hover {
-  color :rgba(4, 117, 1, 1);
-}
-
-.lien-permissions:hover {
-  color :rgba(73, 73, 73, 1);
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: blue;
-  border-radius: 20px;
 }
