@@ -8,7 +8,7 @@ body {
     color: white;
 }
 main {
-    padding: 6vw 6vw 6vw 12vw;
+    margin: 6vw 6vw 6vw 12vw;
 }
 main :nth-child(1) {
     width: 90%;

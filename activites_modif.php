@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un adhérent</title>
     <link rel="stylesheet" href="./Assets/css/activites_modif.css">
-    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/sidemenu.css">
+    <link rel="stylesheet" href="./Assets/css/navmenu.css">
 </head>
 
 <body>

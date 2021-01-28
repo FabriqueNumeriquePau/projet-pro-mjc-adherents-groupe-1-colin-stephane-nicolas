@@ -7,9 +7,7 @@
     <div class ="admin">
         <var>John Doe</var>
         <var>Administrateur</var>
-        <a href="#" class ="logout">
-            <i class="fas fa-power-off"></i>
-        </a>
+        <i class="fas fa-power-off"></i>
     </div>
     
 </nav>

@@ -1,30 +1,22 @@
 main {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 10em;
-    padding: 6em 8em;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6vw 8vw;
     background: #EFEDEB;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-template-areas: 
          "carte1 carte2";
 }
-
-main :nth-child(1) {
-    grid-area: carte1;
-}
-
-main :nth-child(2) {
-    grid-area: carte2;
-}
-
 section {
-    display: grid;  
+    display: grid;
+    width: 18vw;
     grid-template-columns: 1fr 1fr;
     background: #9A6463;
     border-radius: 10px;
     box-shadow: 0 4px 32px 26px rgba(0, 0, 0, 0.15);
-    row-gap: 10px;
+    row-gap: 1vw;
+    padding: 1.5vw;
     grid-template-areas: 
     "titre titre"
     "label1 label1"
@@ -69,111 +61,80 @@ section :nth-child(6) {
 
 section :nth-child(7) {
     grid-area: label2;
-    text-align: left;
 }
 
 section :nth-child(8) {
     grid-area: input1;
-    display: flex;
-    padding : 0px 15px 0px 15px;
-    outline: none;   
+}
+section :nth-child(9) {
+    grid-area: label3;
 }
 
 section :nth-child(10) {
     grid-area: input2;
+}
+section :nth-child(11) {
+    grid-area: bouton;
+}
+section > .fa {
+    font-size: 4.5vw;
+}
+section > i:hover {
+    color: green;
+}
+h1 {
+    font-size: 1.5vw;
+}
+label {
+    margin-left: 0.5vw;
+    font-size: 1vw;
+}
+span {
+    font-size: 1vw;
+}
+article {
     display: flex;
-    padding : 0px 15px 0px 15px;
-    flex-direction: row;
-    outline: none;    
 }
-
-.open-folder-label {
-    text-align: left;
+input {
+    outline: none;
+    border-style: none;
+    padding: 0.4vw;
+    border-radius: 10px;
+    width: 96%;
 }
-
-.open-folder {
+.select-folder {   
     border-radius: 10px 0 0 10px;
-    border-style: none;
-    outline: none;
 }
-
-.open-folder-button {   
+button { 
     border-radius: 0 10px 10px 0;
-    color: grey;
-    border-style: none;
-}
-
-.name-file {
-    align-self: unset;
-    display: flex;
-    justify-self: right;
-    border-radius: 5em;
     border-style: none;
     outline: none;
+    background: #C4C4C4;
 }
-
+button > i {
+    align-self: center;
+}
 #btn-importer {
     width: 150px;
     height: 30px;
-    background: #FF8A00;
+    background: green;
     color: white;
     font-weight: bold;
     align-self: center;
-    margin: 0.5em 1em 1em 1em;
-    border-radius: 5em;
-    padding: 0.4em;
-    border-style: none;
-    grid-area: bouton;
-    justify-self: center;
-    border-style: none;
-    outline: none;
-}
-
-.select-folder-label {   
-    grid-area: label3;
-    text-align: left;
-}
-
-.select-folder {   
-    grid-area: input3;
-    display: flex;
-    width: 270px;
-    justify-self: right;
-    border-radius: 10px 0 0 10px;
-    border-style: none;
-    outline: none;
-  }
-
-.select-folder-button {   
-    grid-area: input3;
-    display: flex;
-    align-self: left;
-    border-radius: 0 10px 10px 0;
-    border-style: none;
-    outline: none;
-}
-
-i:hover {
-    color: green;
-}
-
-label {
-    margin-left: 1.5em;
-}
-
-#btn-modifier {
-    width: 150px;
-    height: 30px;
-    background: #FF8A00;
-    color: white;
-    font-weight: bold;
-    align-self: center;
-    margin: 0.5em 1em 1em 1em;
     border-radius: 10px;
     padding: 0.4em;
-    border-style: none;
+    grid-area: bouton;
+    justify-self: center;
+}
+#btn-exporter {
+    width: 150px;
+    height: 30px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.4em;
     grid-area : bouton;
     justify-self: center;
-    outline: none;
 }
 

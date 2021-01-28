@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  margin: 3vw;
+}
 h1 {
   text-align: center;
   color: rgb(24, 22, 22);
-  font-size: 50px;
+  font-size: 3vw;
 }
 .container {
   display: grid;
@@ -34,8 +37,8 @@ a:hover {
   transition: none;
   transform: scale(1.1);
 }
-i {
-  font-size: 3vw;
+.container > a > i {
+  font-size: 3.5vw;
   margin: 1vw;
 }
 p {

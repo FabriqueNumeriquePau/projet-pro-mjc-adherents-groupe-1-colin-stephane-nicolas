@@ -1,5 +1,6 @@
 body {
-    background: #EFEDEB;
+    background-image: linear-gradient(246.39deg, rgba(255, 255, 255, 0.9) 0.79%, rgba(152, 160, 172, 0.9) 97.56%), url(../img/fondinscription.png);
+    background-size: cover;
     color: white;
 }
 section {
@@ -85,14 +86,14 @@ button:focus {
 #btn-annuler {
     background: #C4C4C4;
 }
-/* .etape1 {
+.etape1 {
  display: none;
-} */
+}
 
 /*-----------------------------------------------Formulaire 2 -------------------------------------------------------*/
-.etape2 {
+/* .etape2 {
     display: none;
-}
+} */
 #form2 {
     display: flex;
     flex-direction: column;
@@ -114,6 +115,10 @@ button:focus {
 textarea {
     height: 4vw;
     border-radius: 10px;
+    resize: none;
+}
+textarea:focus {
+    outline: none;
 }
 
 /*-------------------------------------------------Formulaire 3 -----------------------------------------------------*/
