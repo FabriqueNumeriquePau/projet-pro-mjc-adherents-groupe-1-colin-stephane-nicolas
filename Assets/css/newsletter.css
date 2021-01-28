@@ -1,45 +1,77 @@
-
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 18vw;
-    column-gap: 8vw;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    column-gap: 4vw;
     row-gap: 1.5vw;
-    padding: 1vw 4vw 2vw 10vw;
+    padding: 1vw 4vw 2vw 8vw;
     background: #EFEDEB;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     grid-template-areas:
-         "header header header"
-         "carte1 carte2 btn"
-         "module module module";
+        "header header header"
+        "carte1 carte2 bouton"
+        "module module module";
 }
 main :nth-child(1) {
     grid-area: header;
+    
 }
 main :nth-child(2) {
     grid-area: carte1;
+  
 }
 main :nth-child(3) {
     grid-area: carte2;
+  
 }
-main :nth-child(4) {
-    grid-area: btn;
+main > section:nth-of-type(3) {
+    grid-area: bouton;
+    align-self: center;
+ 
 }
 main :nth-child(5) {
     grid-area: module;
 }
-
-section {
+section.informations {
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     background: #9A6463;
     border-radius: 10px;
     padding: 0 1vw 2vw 1vw;
     box-shadow: 0 4px 32px 26px rgba(0, 0, 0, 0.15);
-    grid-template-areas: 
-    "titre"
-    "form"
-    "form";
+    grid-template-areas:
+        "titre"
+        "form1"
+        "form2"
+        "form3"
+        "form4";
+}
+section.informations :nth-child(1) {
+    grid-area: titre;
+}
+section.informations :nth-child(2) {
+    grid-area: form1;
+}
+section.informations :nth-child(3) {
+    grid-area: form2;
+}
+section.informations :nth-child(4) {
+    grid-area: form3;
+}
+section.informations :nth-child(5) {
+    grid-area: form4;
+}
+.champ {
+    display: grid;
+    grid-template-columns: 4fr 0.5fr;
+    grid-template-areas:
+        "input btn";
+}
+div.champ :nth-child(1) {
+    grid-area: input;
+}
+div.champ :nth-child(2) {
+    grid-area: btn;
 }
 h1 {
     text-align: center;
@@ -51,203 +83,60 @@ h2 {
     text-align: center;
     font-size: 1.5vw;
 }
-section :nth-child(1) {
-    grid-area: titre;
-}
-section :nth-child(2) {
-    grid-area: form;
-}
-article {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-input {
-    margin: 0.5vw;
-    border-radius: 10px;
-    padding: 0.4vw;
-    border-style: none;
-}
-input:focus {
-    outline: none;
-}
 label {
     margin: 0 1.5vw;
     font-size: 0.8vw;
 }
-
-.bouton {
-    background: transparent;
-    box-shadow: none;
-    display: flex;
-    align-items: center;
+input {
+    margin: 0.5vw 0vw 1vw 1vw;
+    border-radius: 30em 0 0 30em;
+    padding: 0.35vw;
+    border-style: none;
+    font-size: 0.9vw;
+    text-align: center;
 }
+input:focus {
+    outline: none;
+}
+.search {
+    margin: 0.5vw 1vw 1vw 0vw;
+    border-radius: 0 30em 30em 0;
+    border: none;
+    background-color: lightslategrey;
+}
+#btn-generer {
+    grid-area: bouton1;
+    border-radius: 10px;
+    width: 10vw;
+    height: 2vw;
+    background: rgba(217, 169, 2, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8vw;
+    outline: none;
+}
+#btn-reinit {
+    grid-area: bouton2;
+    border-radius: 10px;
+    width: 10vw;
+    height: 2vw;
+    background: rgba(217, 169, 2, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
 #btn-envoyer {
+    grid-area: bouton2;
+    border-radius: 10px;
     width: 10vw;
     height: 2vw;
-    background: #543EDD;
+    background: rgba(217, 169, 2, 1);
     color: white;
     font-weight: bold;
-    align-self: center;
+    font-size: 0.8vw;
 }
-#btn-historique {
-    width: 10vw;
-    height: 2vw;
-    background: #543EDD;
-    color: white;
-    font-weight: bold;
-    align-self: center;
+form > trix-editor {
+background-color: white;
+
 }
-  main {
-      display: grid;
-      grid-template-rows: 1fr, 1fr;
-      column-gap: 5em;
-      padding: 6vw 6vw;
-      row-gap: 5em;
-      color: black;
-      background-color: darkgrey;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      grid-template-areas:
-          "area1"
-          "area2";
-
-  }
-
-  main :nth-child(1) {
-      grid-area: area1;
-  }
-
-  main :nth-child(2) {
-      grid-area: area2;
-  }
-
-
-  .informations {
-      display: grid;
-      grid-template-columns: 1fr 1fr .5fr;
-      column-gap: 10px;
-      row-gap: 10px;
-      grid-template-areas:
-          "titre1 titre2 bouton1"
-          "input1 input5 bouton1"
-          "input2 input6 bouton2"
-          "input3 input7 bouton2"
-          "input4 input8 bouton2";
-  }
-
-  section.informations :nth-child(1) {
-      grid-area: titre1;
-      justify-self: left;
-      align-self: flex-end;
-  }
-
-  section.informations :nth-child(2) {
-      grid-area: input1;
-      justify-self: start;
-  }
-
-  section.informations :nth-child(3) {
-      grid-area: input2;
-      justify-self: start;
-  }
-
-  section.informations :nth-child(4) {
-      grid-area: input3;
-      justify-self: start;
-  }
-
-  section.informations :nth-child(5) {
-      grid-area: input4;
-      justify-self: start;
-      align-self: flex-end;
-  }
-
-  section.informations :nth-child(6) {
-      grid-area: titre2;
-      justify-self: start;
-  }
-
-  section.informations :nth-child(7) {
-      grid-area: input5;
-      justify-self: start;
-  }
-
-  section.informations :nth-child(8) {
-      grid-area: input6;
-      justify-self: start;
-
-  }
-
-  section.informations :nth-child(9) {
-      grid-area: input7;
-      justify-self: start;
-
-  }
-
-  section.informations :nth-child(10) {
-      grid-area: input7;
-      justify-self: start;
-
-  }
-
-  .activites,
-  .evenement,
-  .tranche,
-  .liste,
-  .expediteur,
-  .mail,
-  .objet {
-      border-radius: 30em 0 0 30em;
-      width: 25vw;
-      height: 1vw;
-      border: none;
-      text-align: center;
-  }
-
-  .search {
-      border-radius: 0 30em 30em 0;
-      width: 2vw;
-      height: 1vw;
-      border: none;
-      background-color: lightslategrey;
-      align-self: left;
-  }
-
-  #btn-generer {
-      grid-area: bouton1;
-      width: 10vw;
-      height: 2vw;
-      background: rgba(217, 169, 2, 1);
-      color: white;
-      font-weight: bold;
-      font-size: 0.8vw;
-      outline: none;
-      justify-self: center;
-      align-self: flex-end;
-  }
-
-  #btn-reinit {
-      grid-area: bouton2;
-      width: 10vw;
-      height: 2vw;
-      background: rgba(217, 169, 2, 1);
-      color: white;
-      font-weight: bold;
-      font-size: 0.8vw;
-      align-self: center;
-      outline: none;
-      justify-self: center;
-      align-self: flex-start;
-  }
-
-  .fas {
-      width: 0.1vw;
-      height: 0.1vw;
-      text-align: center;
-
-  }
-
-  form {
-    background-color: white;
-
-  }

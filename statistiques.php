@@ -19,11 +19,11 @@
         <section>
             <h2>Critères</h2>
             <article class="min-max-slider">
-                
                 <input id="min" class="min" name="min" type="range" step="1" min="7" max="77" />
                 <input id="max" class="max" name="max" type="range" step="1" min="7" max="77" />
                 <label for="min">Tranche d'âge</label>
             </article>
+
             <article>
                 <label for="min">Sexe</label>
                 <div>
@@ -31,6 +31,7 @@
                     <button class="search" type="submit"><i class="fas fa-search"></i></button>
                 </div>
             </article>
+
             <article>
                 <label for="min">Profession</label>
                 <div>
@@ -38,6 +39,7 @@
                     <button class="search" type="submit"><i class="fas fa-search"></i></button>
                 </div>
             </article>
+
             <article>
                 <label for="min">Evènements</label>
                 <div>
@@ -45,6 +47,7 @@
                     <button class="search" type="submit"><i class="fas fa-search"></i></button>
                 </div>
             </article>
+
             <article>
                 <label for="min">Activités</label>
                 <div>
@@ -52,6 +55,7 @@
                     <button class="search" type="submit"><i class="fas fa-search"></i></button>
                 </div>
             </article>
+
             <article>
                 <label for="min">Etablissements scolaires<label>
                         <div>
